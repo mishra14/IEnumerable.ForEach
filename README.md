@@ -21,7 +21,8 @@ Launch Visual Studio 2015+ and then launch Package Manager Console.
 
 ## Using
 The following program deletes all the files in a directory without the need for a `foreach` loop -  
-```
+
+```csharp
 using System;
 using System.IO;
 using IEnumerable.ForEach;

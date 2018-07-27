@@ -1,7 +1,22 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <TargetFrameworks>net45;netstandard1.3;netstandard2.0</TargetFrameworks>
+    <RootNamespace>IEnumerable.ForEach</RootNamespace>
+    <AssemblyName>IEnumerable.ForEach</AssemblyName>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <Version>1.0.0.0</Version>
+    <AssemblyVersion>$(Version)</AssemblyVersion>
+    <PackageVersion>$(Version)</PackageVersion>
+    <PackageVersion Condition=" '$(ReleaseLabel)'!=''">$(Version)-$(ReleaseLabel)</PackageVersion>
+    <GeneratePackageOnBuild Condition=" '$(pack)'=='true'">true</GeneratePackageOnBuild>
+    <Authors>Ankit Mishra</Authors>
+    <Description>ForEach extension for IEnumerable type.</Description>
+    <RepositoryUrl>https://github.com/mishra14/IEnumerable.ForEach</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/mishra14/IEnumerable.ForEach</PackageProjectUrl>
+    <RepositoryType>git</RepositoryType>
   </PropertyGroup>
 
 </Project>

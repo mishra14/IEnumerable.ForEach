@@ -28,19 +28,17 @@ using IEnumerable.ForEach;
 
 namespace Sample
 {
-	class Program
-	{
-		static void Main(string[] args)
-		{
-			var dest = @"F:\demo\folder";
-
-			if (Directory.Exists(dest))
-			{
-				Console.WriteLine("Deleting files...");
-				Directory.GetFiles(dest).ForEach(e => File.Delete(e));
-
-			}
-		}
-	}
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      var dest = @"F:\demo\folder";
+      if (Directory.Exists(dest))
+      {
+        Console.WriteLine("Deleting files...");
+        Directory.GetFiles(dest).ForEach(e => File.Delete(e));
+      }
+    }
+  }
 }
 ```
